@@ -1,0 +1,24 @@
+# Vercel
+.vercel
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Environment files (if you add any later)
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+.cache/

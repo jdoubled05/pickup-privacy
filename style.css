@@ -1,0 +1,312 @@
+/* Pickup Privacy Site Styles */
+
+:root {
+    --brand: #960000;
+    --brand-light: #C00000;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --bg: #ffffff;
+    --bg-gray: #f9fafb;
+    --border: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: var(--brand);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background: var(--bg-gray);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--brand);
+}
+
+/* Main Content */
+main {
+    padding: 3rem 0;
+}
+
+article {
+    background: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--brand);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem;
+    color: var(--text);
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--brand);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.updated {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--brand);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin: 2.5rem 0;
+}
+
+section:first-of-type {
+    margin-top: 0;
+}
+
+/* Lists */
+ul {
+    margin: 1rem 0 1rem 2rem;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+li strong {
+    color: var(--brand);
+}
+
+/* Service List */
+.service-list {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.service {
+    background: var(--bg-gray);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.service h4 {
+    margin-top: 0;
+}
+
+.service p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Summary Box */
+.summary {
+    background: var(--bg-gray);
+    border-left: 4px solid var(--brand);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+
+.summary h2 {
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+/* Contact Card */
+.contact-card {
+    background: var(--brand);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-card h3 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.contact-card a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+.contact-card .note {
+    margin-top: 1rem;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* FAQ */
+.faq {
+    background: var(--bg-gray);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.faq h3 {
+    margin-top: 0;
+    color: var(--brand);
+}
+
+.faq p {
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    background: var(--bg-gray);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+}
+
+.button {
+    display: inline-block;
+    background: var(--brand);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: var(--brand-light);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: var(--text);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: var(--brand-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin-right: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    main {
+        padding: 2rem 0;
+    }
+}
